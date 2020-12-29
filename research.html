@@ -25,17 +25,6 @@
   text-align: center;
 }
 
-.captioned-figure {
-  display: inline-block;
-  min-width: 50%;
-  max-width: 50%
-}
-
-.full-width {
-  display: block;
-  width: 100%;
-  height: auto;
-}
 
 f1 {
   font-size: 11px;
@@ -46,15 +35,46 @@ f2 {
 }
 
 f3 {
-  font-size: 16px;
+  font-size: 24px;
 }
 
 p.big {
   line-height: 1.5;
 }
 
+.center {
+  margin: auto;
+  width: 70%;
+  height: 100%;
+  
+}
+
+div.a {
+  text-align: center;
+}
+
+.top-figure {
+  display: inline-block;
+  min-width: 50%;
+  max-width: 50%
+}
+
+.captioned-figure {
+  display: inline-block;
+  min-width: 115%;
+  max-width: 115%;
+  
+}
+
+li {
+ float: left;
+ width: 400px;
+ clear: both;
+}
 
 </style>
+
+
 
 </head>
 
@@ -67,6 +87,7 @@ p.big {
 <td><a href="index.html">Home</a></td>
 <td><a href="cv.html">CV</a></td>
 <td><a href="research.html">Research</a></td>
+<td><a href="publications.html">Publications</a></td>
 <td><a href="teaching.html">Teaching</a></td>
 </tr>
 </table>
@@ -75,101 +96,117 @@ p.big {
 <div class="hr"> <hr /> </div>
 
 
-
-
 </div>   <! End of navigation div -->
 
 <div id="name">
 Research
 </div>
 
-<div class="fig-container">
-    <figure class="captioned-figure">
-        <img src="images-static/test.gif" width="220" class="center"/> <img src="images-static/ani_649.gif"/ width="300" class="center"/>
+<!-- <div class="fig-container">
+    <figure class="top-figure">
+        <img src="images-static/test.gif" width="220"/> <img src="images-static/ani_649.gif"/ width="300" />
 		<figcaption><font size="1"> (Left) Simulated annealing in a generalized <a href="https://en.wikipedia.org/wiki/Classical_XY_model"> XY model </a> from statistical mechanics developed by myself and colleague Charles Windolf. Colors are inferred perceptual groups. I am interested in how systems like this can perceptually organize visual scenes. (Right) "Kura-Net" for texture segmentation. A distribution on Kuramoto couplings conditioned on image data is learned by backpropagation through oscillator dynamics. This and similar models are the subject of joint research with Thomas Serre, Yuwei Zhang, Aneri Soni, Mathieu Chalvidal and Minju Jung. If using Chrome, refresh the page to see the animation again. </font>
 		</figcaption>
     </figure>
-</div>
+</div> -->
 
 <div id="main"
 
-<br>
-
-
-I study machine learning methods for <a href="https://arxiv.org/abs/2006.09545"> optimally controlling neural dynamics</a>, particularly oscillatory dynamics. I am interested how these methods can be used to understand the <a href="https://www.biorxiv.org/content/10.1101/2019.12.16.877829v1"> cortical processes </a> underlying <a href="http://rsfs.royalsocietypublishing.org/content/8/4/20180011"> higher cognition </a>. <br>
-<br>
-<br>
-<hr>
-
-<p> <b>Articles in preparation </b>
-
- <ul>
- <p class="big"><f3>Neural optimal control of the Kuramoto model for phase-based data clustering</f3><br>
- <f1>Ricci, M.G., Zhang, Y., Chalvidal, M., Soni, A., Jung, M., Serre, T.</f1></p class="big">
- 
-  <p class="big"><f3>Network reconstruction from neural observables</f3><br>
- <f1>Ricci, M., <a href="https://sites.brown.edu/drewlinsley"> Linsley, D. </a>, Govindarajan, L., Chalvidal, M., Serre, T. </f1></p class="big">
- 
-   <p class="big"><f3>Variational methods for generating adversarial distributions</f3><br>
- <f1>Ricci, M., <a href="https://sites.brown.edu/drewlinsley"> Linsley, D. </a>, Govindarajan, L.</f1></p class="big">
-</ul> 
-
-<hr>
-<b>Selected Articles </b>
- <ul>
- 
-  <p class="big"><f3><a href="https://www.biorxiv.org/content/10.1101/2019.12.16.877829v1" style="color:#65bde6">Differential involvement of EEG oscillatory components in identy vs. spatial relation reasoning tasks </a></f><br>
- <f2> eNeuro (forthcoming)</f2><br>
- <f1>Alamia, A., Luo, C., Ricci, M.G., Kim, J., Serre, T. and VanRullen, R. (2020)</f1></p class="big">
- 
- <p class="big"><f3><a href="https://www.sciencedirect.com/science/article/pii/S2352154620301352" style="color:#65bde6"> Same-Different Conceptualization: A Machine Vision Perspective</a></f><br>
- <f2> Current Opinion in Behavior Sciences</f2><br>
- <f1>Ricci, M., Cadène, R & Serre, T. (2020)</f1></p class="big">
- 
-  <p class="big"><f3><a href="https://arxiv.org/abs/2006.09545" style="color:#65bde6"> Go With the Flow: Adpative Control for Neural ODEs </a></f><br>
- <f2>arXiv:2006.09545v1 [cs.LG]</f2><br>
- <f1>Chalvidal, M., Ricci, M., VanRullen, R., & Serre, T. (2020)</f1></p class="big">
- 
-   <p class="big"><f3><a href="https://serre-lab.clps.brown.edu/wp-content/uploads/2020/03/Ricci2020.pdf" style="color:#65bde6">Hierarchical Models of the Visual System </a></f><br>
- <f2> Encyclopedia of Computational Neuroscience</f2><br>
- <f1>Ricci, M., & Serre, T. (2020)</f1></p class="big">
- 
- <p class="big"><f3><a href="https://pubmed.ncbi.nlm.nih.gov/29951191/" style="color:#65bde6">Not-so-CLEVR: Learning same-different relations strains feedforward neural networks</a></f><br>
- <f2> Journal of the Royal Society Interface</f2><br>
- <f1> Kim, J., Ricci, M.G., and Serre, T. (2018)</f1></p class="big">
- 
-  <p class="big"><f3><a href="https://arxiv.org/pdf/1802.03390.pdf" style="color:#65bde6">Same-Different Problems Strain Convolutional Neural Networks</a></f><br>
- <f2> Proceedings of the 40th Annual Conference of the Cognitive Science Society</f2><br>
- <f1>  Ricci, M.G, Kim, J. and Serre, T. (2018) </f1></p class="big">
- 
-   <p class="big"><f3><a href="https://link.springer.com/article/10.3758/s13414-017-1310-0" style="color:#65bde6">Accurate Step-Hold Tracking of Smoothly Varying Periodic and Aperiodic Probability.</a></f><br>
- <f2> Atten. Percept. Psychophys.</f2><br>
- <f1>  Ricci, M.G., and Gallistel, R. (2017) </f1></p class="big">
- 
-   <p class="big"><f3><a href="https://arxiv.org/abs/1605.03060" style="color:#65bde6">A Passage-of-time Model of the Cerebellar
-Purkinje Cell</a></f><br>
- <f2> arXiv:1605.03060v2 [q-bio.NC] .</f2><br>
- <f1> Ricci, M.G., Kim, J and Johansson, F. (2016) </f1></p class="big">
-
-</ul> 
-
-<div id="footer">
-
-<br clear="all" />
-
-
-</div>
+<div class="center">
+I study the relationship between machine learning and dynamical systems, with applications to neuroscience and biology more generally. A major current focus is the dynamics of biological networks, particularly oscillator networks. Other recent work has explored machine learning methods for <a href="https://arxiv.org/abs/2006.09545" style="color:#65bde6"> optimally controlling neural dynamics</a> and how these methods can be used to understand the <a href="https://www.biorxiv.org/content/10.1101/2019.12.16.877829v1" style="color:#65bde6"> cortical processes </a> underlying <a href="http://rsfs.royalsocietypublishing.org/content/8/4/20180011" style="color:#65bde6"> higher cognition</a>. Here is an overview of ongoing work:
 </div>
 
+<div class="center">
+	<div style="width: 500px; height: 450px; float: left; border-style: solid; border-color: #65bde6; margin-bottom: 2em"> 
+		<div class="a"> <f3> Learning to control</br> biological network dynamics</div>
+		<figure class="captioned-figure">
+			<img src="images-static/osci.png" width="1000" class="center"/> 
+			<figcaption><font size="1"; float: left> 
+		<f2> Given a population of networked agents with random features, how do we <br> connect them to achieve an optimal dynamics? <br> <br>
+		<b> Related Work: </b>
+		<f1> 
 
+		<ul>
+		  <li>Ricci, M.G., Zhang, Y., Soni, A., Jung, M., & Serre, T. Learning to control huge systems of coupled oscillators (In preparation)</li>
+		  <li>Ricci, M.G., Zhang, Y., Soni, A., Jung, M., & Serre, T. Kura-Net: Exploring systems of coupled oscillators using deep learning. COSYNE, 2020.</li>
+		  <li>Ricci, M.G., Windolf, C., & M., Serre, T., A Formal Model of Neural Synchrony for Unsupervised Image Grouping. COSYNE, 2019. </li>
+		</ul>  
 
+		</font>
+		</figcaption>
+    </figure>
+	</div>
+	
+	<div style="width: 500px; height: 450px;  float: right; border-style: solid; border-color: #65bde6; margin-bottom: 2em"> 
+		<div class="a"> <f3>Neural optimal control </div>
+		<figure class="captioned-figure">
+			<img src="images-static/noc.png" style="width:400px" class="center"/> 
+			<figcaption><font size="1"> 
+		<f2> Can we use principles from optimal control theory to learn adaptive policies <br>for steering dynamical systems? <br> <br>
+		<b> Related Work: </b>
 
+		<f1> 
+		<ul>
+		  <li>Ricci, M.G., <a href="https://sites.brown.edu/drewlinsley" style="color:#65bde6">Linsley, D.</a>, Govindarajan, L. Control methods for generating adversarial distributions (In preparation).</li>
+		  <li><a href="https://arxiv.org/abs/2006.09545" style="color:#65bde6">Chalvidal, M., Ricci, M., VanRullen, R., & Serre, T. (2020). Go with the Flow: Adaptive control for neural ODEs arXiv:2006.09545v1
+[cs.LG]</a></li>
+		</ul>  
 
+		</font>
+		</figcaption>
+    </figure>
+	</div>
+</div>
 
+<div class="center">
+	<div style="width: 500px; height: 450px; float: left; border-style: solid; border-color: #65bde6; margin-bottom: 2em"> 
+		<div class="a">  <f3>Understanding the neural dynamics<br> of visual reasoning </div>
+		<figure class="captioned-figure">
+			<img src="images-static/alamia.png" style="width:200px" class="center"/> <img src="images-static/elk.gif" style="width:200px" class="center"/> 
+			<figcaption><font size="1"> 
+		<f2> How do machines reason about images compared to humans, and what<br> principles of neural dynamics underlie this ability? <br><br>
+		<b> Related Work: </b>
 
+		<f1> 
 
+		<ul>
+		  <li><a href="https://www.biorxiv.org/content/10.1101/2019.12.16.877829v1" style="color:#65bde6">Alamia, A., Luo, C., Ricci, M.G., Kim, J., Serre, T., VanRullen, R. Differential involvement of EEG oscillatory components in sameness
+vs. spatial-relation visual reasoning tasks bioRxiv 2019.12.16.877829 </a></lli>
+		<li><a href="https://www.sciencedirect.com/science/article/pii/S2352154620301352" style="color:#65bde6">Ricci, M., Cadène, R., & Serre, T. (2020). Same-different conceptualization : A machine vision perspective. Current Opinion in
+Behavioral Sciences, 37, 47–55. https://doi.org/10.1016/j.cobeha.2020.08.008 </a></li>
+		  <li><a href="https://pubmed.ncbi.nlm.nih.gov/29951191/" style="color:#65bde6">Kim, J., Ricci, M.G., & Serre, T. (2018). Not-So-CLEVR : learning same – different relations strains feedforward neural networks.
+Royal Society Interface, 8(2018011) </a></li>
+		  <li> Ricci, M.G., Kim, J., & Serre, T. (2018). Same-different problems strain convolutional neural networks. In Proceedings of the 40th Annual Cognitive Science Society. Madison, WI: Cognitive Science Society.
+[cs.LG]</li>
+		</ul>  
 
+		</font>
+		</figcaption>
+    </figure>
+	</div>
+	<div style="width: 500px; height: 450px; float:right;  border-style: solid; border-color: #65bde6; margin-bottom: 2em"> 
+		<div class="a">  <f3>Network analysis of<br> animal disease models </div>
+		<figure class="captioned-figure">
+			<img src="images-static/tmp.png" style="width:450px" class="center"/> 
+			<figcaption><font size="1"> 
+		<f2> What can graph theory and the theory of complex networks tell us about<br> animal behavior and disease? This is joint work with the lab of <a href="https://www.abrairalab.org/" style="color:#65bde6">Victoria Abraira </a>. <br><br>
+			<b> Related Work: </b>
+
+		<f1> 
+
+		<ul>
+		  <li>Ricci, M.G., Thackray, J., Theis, T., Abraira, V. Automated modeling of higher-order behavioral sequences in mouse models of spinal
+injury (In preparation)</li>
+
+		</ul>  
+
+		</font>
+		</figcaption>
+    </figure>
+	</div>
+</div>
 </body>
+</div>
 </html>
 
 
