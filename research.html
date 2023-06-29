@@ -21,56 +21,67 @@
 <link rel="icon" href="images-static/duck.jpg" type="image/png" />
 
 <style>
-.fig-container {
-  text-align: center;
-}
+/* Set up the layout for the page */
 
+		div.a {
+		  text-align: center;
+		}
+		f1 {
+		  font-size: 11px;
+		}
 
-f1 {
-  font-size: 11px;
-}
+		f2 {
+		  font-size: 13px;
+		}
 
-f2 {
-  font-size: 13px;
-}
+		f3 {
+		  font-size: 24px;
+		}
+		f4 {
+		  font-size: 32px;
+		}
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-f3 {
-  font-size: 24px;
-}
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-p.big {
-  line-height: 1.5;
-}
+        .box {
+            width: 30%;
+            margin: 1%;
+			border-style: solid;
+            border-color:  #65bde6;
+            text-align: left;
+            padding: 2%;
+        }
 
-.center {
-  margin: auto;
-  width: 70%;
-  height: 100%;
-  
-}
+        .box img {
+            width: 100%;
+        }
 
-div.a {
-  text-align: center;
-}
+        .box figcaption {
+            margin-top: 1%;
+            font-style: italic;
+        }
 
-.top-figure {
-  display: inline-block;
-  min-width: 50%;
-  max-width: 50%
-}
+        .container-2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-.captioned-figure {
-  display: inline-block;
-  min-width: 115%;
-  max-width: 115%;
-  
-}
-
-li {
- float: left;
- width: 400px;
- clear: both;
-}
+        .box-2 {
+            width: 30%;
+            margin: 1%;
+            background-color: lightcoral;
+            text-align: center;
+            padding: 2%;
+        }
 
 </style>
 
@@ -88,7 +99,7 @@ li {
 <td><a href="cv.html">CV</a></td>
 <td><a href="research.html">Research</a></td>
 <td><a href="publications.html">Publications</a></td>
-<td><a href="teaching.html">Teaching</a></td>
+<td><a href="teaching.html">Teaching & Outreach</a></td>
 </tr>
 </table>
 
@@ -104,103 +115,113 @@ Research
 
 <div id="main"
 
+Other work has explored machine learning methods for neural optimal control, with applications to systems of coupled oscillators and the cortical processes undelrying higher cognition. 
+
+Other work has explored machine learning methods for optimal control, particularly of systems of coupled oscillators,  
+which we have used to model...
+
 <div class="center">
-I study the relationship between machine learning and dynamical systems, with applications to neuroscience and biology more generally. A major current focus is the dynamics of biological networks, particularly <a href="https://github.com/serre-lab/KuraNet" style="color:#65bde6">oscillator networks</a>. Other recent work has explored machine learning methods for <a href="https://arxiv.org/abs/2006.09545" style="color:#65bde6"> optimally controlling neural dynamics</a> and how these methods can be used to understand the <a href="https://www.biorxiv.org/content/10.1101/2019.12.16.877829v1" style="color:#65bde6"> cortical processes </a> underlying <a href="http://rsfs.royalsocietypublishing.org/content/8/4/20180011" style="color:#65bde6"> higher cognition</a>. Here is an overview of ongoing work:
+I study representation learning for dynamical systems with applications to the life sciences, from the genetic to the behavioral levels.
+Some major currents include the <a href="https://arxiv.org/abs/2212.03857" style="color:#65bde6"> unsupervised inference of governing
+ equations</a> and <a href="https://arxiv.org/abs/2212.03857" style="color:#65bde6"> bifurcation prediction</a> in cell cycle dynamics. Other recent
+ work has explored machine learning methods for <a href="https://arxiv.org/abs/2006.09545" style="color:#65bde6"> optimal control</a>, particularly of
+ <a href="https://github.com/serre-lab/KuraNet" style="color:#65bde6"> systems of coupled oscillators</a>, which we have used to model the
+ <a href="https://www.biorxiv.org/content/10.1101/2019.12.16.877829v1" style="color:#65bde6"> cortical processes </a>
+ underlying <a href="http://rsfs.royalsocietypublishing.org/content/8/4/20180011" style="color:#65bde6"> higher visual cognition</a>. Here is an overview of ongoing and former work:
 </div>
 
-<div class="center">
-	<div style="width: 500px; height: 450px; float: left; border-style: solid; border-color: #65bde6; margin-bottom: 2em"> 
-		<div class="a"> <f3> Machine learning for <br> adaptive network dynamics</div>
-		<figure class="captioned-figure">
-			<img src="images-static/kuranet.png" width="1800" class="center"/> 
-			<figcaption><font size="1"; float: left> 
-		<f2> Given a population of networked agents with random features, can we predict <br> how to connect them to achieve an optimal dynamics? <a href="http://github.com/serre-lab/KuraNet" style="color:#65bde6"> [Github] </a><br> <br>
-		<b> Related Work: </b>
-		<f1> 
+<hr style="width:75%">
+<br>
+<br>
 
-		<ul>
-		  <li><a href="https://arxiv.org/abs/2105.02838" style="color:#65bde6">Ricci, M.G., Jung, M., Zhang, Y., Chalvidal, M., Soni, A.,& Serre, T. KuraNet: Systems of Coupled Oscillators that Learn to Synchronize (Under Review)</a></li>
-		  <li>Ricci, M.G., Zhang, Y., Soni, A., Jung, M., & Serre, T. Kura-Net: Exploring systems of coupled oscillators using deep learning. COSYNE, 2020.</li>
-		  <li>Ricci, M.G., Windolf, C., & M., Serre, T., A Formal Model of Neural Synchrony for Unsupervised Image Grouping. COSYNE, 2019. </li>
-		</ul>  
-
-		</font>
-		</figcaption>
-    </figure>
-	</div>
-	
-	<div style="width: 500px; height: 450px;  float: right; border-style: solid; border-color: #65bde6; margin-bottom: 2em"> 
-		<div class="a"> <f3>Neural optimal control </div>
-		<figure class="captioned-figure">
-			<img src="images-static/noc.png" style="width:400px" class="center"/> 
-			<figcaption><font size="1"> 
-		<f2> Can we use principles from optimal control theory to learn adaptive policies <br>for steering dynamical systems? <br> <br>
-		<b> Related Work: </b>
-
-		<f1> 
-		<ul>
-		  <li>Ricci, M.G., <a href="https://sites.brown.edu/drewlinsley" style="color:#65bde6">Linsley, D.</a>, Govindarajan, L. Control methods for generating adversarial distributions (In preparation).</li>
-		  <li><a href="https://arxiv.org/abs/2006.09545" style="color:#65bde6">Chalvidal, M., Ricci, M.G., Serre, T., VanRullen, R. (2021) Go With the Flow: Adaptive Control for Neural ODEs. 8th International Conference on Learning Representations, ICLR 2020 - Conference Track Proceedings, (forthcoming) </a></li>
-		</ul>  
-
-		</font>
-		</figcaption>
-    </figure>
-	</div>
-</div>
-
-<div class="center">
-	<div style="width: 500px; height: 450px; float: left; border-style: solid; border-color: #65bde6; margin-bottom: 2em"> 
-		<div class="a">  <f3>Understanding the neural dynamics<br> of visual reasoning </div>
-		<figure class="captioned-figure">
-			<img src="images-static/alamia.png" style="width:200px" class="center"/> <img src="images-static/elk.gif" style="width:200px" class="center"/> 
-			<figcaption><font size="1"> 
-		<f2> How do machines reason about images compared to humans, and what<br> principles of neural dynamics underlie this ability? <br><br>
-		<b> Related Work: </b>
-
-		<f1> 
-
-		<ul>
-		  <li><a href="https://www.biorxiv.org/content/10.1101/2019.12.16.877829v1" style="color:#65bde6">Alamia, A., Luo, C., Ricci, M.G., Kim, J., Serre, T., VanRullen, R. Differential involvement of EEG oscillatory components in sameness
-vs. spatial-relation visual reasoning tasks. bioRxiv 2019.12.16.877829 </a></lli>
-		<li><a href="https://www.sciencedirect.com/science/article/pii/S2352154620301352" style="color:#65bde6">Ricci, M., Cadène, R., & Serre, T. (2020). Same-different conceptualization : A machine vision perspective. Current Opinion in
-Behavioral Sciences, 37, 47–55. https://doi.org/10.1016/j.cobeha.2020.08.008 </a></li>
-		  <li><a href="https://pubmed.ncbi.nlm.nih.gov/29951191/" style="color:#65bde6">Kim, J., Ricci, M.G., & Serre, T. (2018). Not-So-CLEVR : learning same – different relations strains feedforward neural networks.
-Royal Society Interface, 8(2018011) </a></li>
-		  <li> Ricci, M.G., Kim, J., & Serre, T. (2018). Same-different problems strain convolutional neural networks. In Proceedings of the 40th Annual Cognitive Science Society. Madison, WI: Cognitive Science Society.
-[cs.LG]</li>
-		</ul>  
-
-		</font>
-		</figcaption>
-    </figure>
-	</div>
-	<div style="width: 500px; height: 450px; float:right;  border-style: solid; border-color: #65bde6; margin-bottom: 2em"> 
-		<div class="a">  <f3>Network analysis of<br> animal disease models </div>
-		<figure class="captioned-figure">
-			<img src="images-static/tmp.png" style="width:450px" class="center"/> 
-			<figcaption><font size="1"> 
-		<f2> What can graph theory and the theory of complex networks tell us about<br> animal behavior and disease? This is joint work with the lab of <a href="https://www.abrairalab.org/" style="color:#65bde6">Victoria Abraira </a>. <br><br>
+<div class="a"> <f4>Current Projects</div>
+<!-- First part of the page -->
+    <div class="container">
+        <div class="box">
+			<div class="a"> <f3>Large-scale representation learning <br> for dynamical systems</div>
+            <img src="images-static/p2v.png" alt="images-static/dummy image">
+            <figcaption>
+			<f2> Can we learn a uiversal feature dictionary for the classification, design and control of dynamical systems?<a href="https://github.com/nitzanlab/phase2vec.git" style="color:#65bde6"> [Github] </a><br> <br>
+			</figcaption>
 			<b> Related Work: </b>
+			<f1> 
+			<ul>
+			  <li><a href="https://arxiv.org/abs/2212.03857" style="color:#65bde6">Ricci, M.G., Moriel, M., Piran, Z., and Nitzan, M. Phase2vec: Dynamical system embedding with a physics-informed convolutional network. ICLR 2023 (Spotlight)</a></li>
+			  <li>Ricci, Moriel, M., Ricci, M.G., Nitzan, M. Let's do the time-warp-attend: Learning topologically-invariant representations of dynamical systems (Submitted) </li>
+			</ul> 
+        </div>
 
-		<f1> 
+        <div class="box">
+		<div class="a"> <f3>Learning the latent<br> structure of biological PDEs</div>
+            <img src="images-static/sp2v.png" alt="images-static/dummy image">
+            <figcaption>		<f2> Can we learn latent features (left) for the automated design (right) of biological patterning systems?<br> <br>
+			</figcaption>
+			<b> Related Work: </b>
+			<f1> 
+			<ul>
+			  <li>Ricci, M.G., Moriel, N., Nitzan, M. Spatial Phase2vec: Learning a PDE embedding space with applications to reaction-diffusion models (In preparation)</li>
+			</ul>  
+        </div>
 
-		<ul>
-		  <li>Theis, T., Ricci, M.G., Thackray, J., Abraira, V. Automated modeling of higher-order behavioral sequences in mouse models of spinal
-injury (In preparation)</li>
-		  <li> Theis, T., Thackray, J.K., Ricci, M.G., Abraira, V. A machine vision approach for automated locomotor recovery at millisecond timescales. 38th Annual National Neurotrauma Symposium, Virtual. July 11-14, 2021. </li>
-		  <li> <a href="https://www.biorxiv.org/content/10.1101/2021.06.16.448689v1" style="color:#65bde6"> Bohic, M., Pattison, L.A., Jhumka, Z.A., Rossi, H., Thackray, J.K., Ricci, M.G., Foster, W., Arnold, J., Mossazghi, N., Yttri, E.A.,Tischfield, M.A., Smith, E. S-J, Abdus-Saboor, I., Abraira, V. (2021) Behavioral and nociceptor states of inflammatory pain across timescales in 2D and 3D.  bioRxiv 2019.12.16.877829</li>
-
-
+        <div class="box">
+			<div class="a">  <f3>Embedding ethological dynamics </div>
+            <img src="images-static/tmp.png" alt="images-static/dummy image">
+            <figcaption>		<f2> Can we learn compact representation of ethological dynamics that tell us about animal injury and disease? This is joint work with the lab of <a href="https://www.abrairalab.org/" style="color:#65bde6">Victoria Abraira </a>. <br><br>
+			</figcaption>
+			<b> Related Work: </b>
+			<f1> 
+			<ul>
+			  <li> Ricci, M.G., Thackray, J., Tischfield, M., Abraira, V. Animal2Vec: Dynamical embedding methods for computational ethology (In preparation)</li>
+			  <li> <a href="https://www.biorxiv.org/content/10.1101/2021.06.16.448689v1" style="color:#65bde6"> Bohic, M., Pattison, L.A., Jhumka, Z.A., Rossi, H., Thackray, J.K., Ricci, M.G., Foster, W., Arnold, J., Mossazghi, N., Yttri, E.A.,Tischfield, M.A., Smith, E. S-J, Abdus-Saboor, I., Abraira, V. (2021) Mapping the neuroethological signatures of pain, analgesia and recovery in mice.  Neuron, 2023</a></li>
+			  <li> Theis, T., Thackray, J.K., Ricci, M.G., Abraira, V. A machine vision approach for automated locomotor recovery at millisecond timescales. 38th Annual National Neurotrauma Symposium, Virtual. July 11-14, 2021. </li>
 		</ul>  
+        </div>
+    </div>
+	
+<hr style="width:75%">
+<br>
+<br>
+	
+<div class="a"> <f4>Earlier Projects</div>
 
-		</font>
-		</figcaption>
-    </figure>
-	</div>
-</div>
-</body>
-</div>
+    <!-- Second part of the page -->
+    <div class="container-2">
+        <div class="box">
+		<div class="a"> <f3> Machine learning for <br> adaptive network dynamics</div>
+            <img src="images-static/kuranet.png" alt="images-static/dummy image">
+            <figcaption><f2> Given a population of networked agents with random features, can we predict <br> how to connect them to achieve an optimal dynamics? <a href="http://github.com/serre-lab/KuraNet" style="color:#65bde6"> [Github] </a><br> <br></figcaption>
+			<b> Related Work: </b>
+			<f1> 
+
+			<ul>
+			  <li><a href="https://arxiv.org/abs/2105.02838" style="color:#65bde6">Ricci, M.G., Jung, M., Zhang, Y., Chalvidal, M., Soni, A.,& Serre, T. KuraNet: Systems of Coupled Oscillators that Learn to Synchronize</a></li>
+			  <li><a href="https://arxiv.org/abs/2006.09545" style="color:#65bde6">Chalvidal, M., Ricci, M.G., Serre, T., VanRullen, R. (2021) Go With the Flow: Adaptive Control for Neural ODEs. ICLR 2021 </a></li>
+			  <li>Ricci, M.G., Zhang, Y., Soni, A., Jung, M., & Serre, T. Kura-Net: Exploring systems of coupled oscillators using deep learning. COSYNE, 2020.</li>
+			  <li>Ricci, M.G., Windolf, C., & M., Serre, T., A Formal Model of Neural Synchrony for Unsupervised Image Grouping. COSYNE, 2019. </li>
+			</ul>  
+		</div>
+
+        <div class="box">
+			<div class="a">  <f3>Understanding the neural dynamics<br> of visual reasoning </div>
+
+			<img src="images-static/alamia.png" style="width:200px" class="center"/> <img src="images-static/elk.gif" style="width:200px" class="center"/> 
+            <figcaption>
+			<f2> How do machines reason about images compared to humans, and what<br> principles of neural dynamics underlie this ability? <br><br>
+			</figcaption>		
+			<b> Related Work: </b>
+					<f1> 
+
+					<ul>
+					  <li><a href="https://www.biorxiv.org/content/10.1101/2019.12.16.877829v1" style="color:#65bde6">Alamia, A., Luo, C., Ricci, M.G., Kim, J., Serre, T., VanRullen, R. Differential involvement of EEG oscillatory components in sameness
+			vs. spatial-relation visual reasoning tasks. bioRxiv 2019.12.16.877829 </a></lli>
+					<li><a href="https://www.sciencedirect.com/science/article/pii/S2352154620301352" style="color:#65bde6">Ricci, M., Cadène, R., & Serre, T. (2020). Same-different conceptualization : A machine vision perspective. Current Opinion in
+			Behavioral Sciences, 37, 47–55. https://doi.org/10.1016/j.cobeha.2020.08.008 </a></li>
+					  <li><a href="https://pubmed.ncbi.nlm.nih.gov/29951191/" style="color:#65bde6">Kim, J., Ricci, M.G., & Serre, T. (2018). Not-So-CLEVR : learning same – different relations strains feedforward neural networks.
+			Royal Society Interface, 8(2018011) </a></li>
+					  <li> Ricci, M.G., Kim, J., & Serre, T. (2018). Same-different problems strain convolutional neural networks. In Proceedings of the 40th Annual Cognitive Science Society. Madison, WI: Cognitive Science Society.
+			[cs.LG]</li>
+					</ul>  
+        </div>
 </html>
 
 
